@@ -3,9 +3,10 @@ import time
 web = webdriver.Chrome()
 web.get('http://web.whatsapp.com')
 time.sleep(10)
-print('Enter name of the victim')
-name=input()
-elem = web.find_element_by_xpath("//span[@title=name]")
+#print('Enter name of the victim')
+#name=input()
+elem = web.find_element_by_xpath("//span[@title=**********]")
+#replace ************* by the contact's name
 elem.click()
 elem1 = web.find_element_by_xpath("//div[@contenteditable='true']")
 for i in range(1,1000):
